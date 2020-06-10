@@ -202,6 +202,69 @@ text-align: center;
 /*chat footer styling*/
 #chat-footer {
 	height: 50px;
-	border: 1px solid black;
+	border-top: 1px solid black;
+	display: flex;
+	background-color: #DCDCDC;
+}
+
+#chat-footer #text-box textarea{
+	height: 40px;
+	resize: none;
+	font-style: normal;
+	padding: 5px 0 0 6px;
+	display: inline-block;
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border: none;
+}
+}
+#chat-footer #text-box textarea::placeholder {
+	font-style: italic;
+}
+#chat-footer-container{
+	height: 100%;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	background-color: #ededeb;
+	padding-top: 6px
+}
+
+#chat-footer-container #text-box{
+	width: 80%;
+	position: relative;
+}
+
+#chat-footer-container #attachment-icon{
+	flex:1;
+	background-color: white;
+	margin-bottom: 3px;
+}
+
+#chat-footer-container #attachment-icon i{
+	flex:1;
+	width: 33px;
+	height: 33px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ababab;
+	margin: 4px 0 0 9px;
+	padding: 3px 0 0 6px;
+	display: inline-block;
+	background-color: #ededeb;
+	cursor: pointer;
+
+}
+#chat-footer-container #sender-icon{
+	flex:1;
+	/*border: 1px solid black;*/
+	padding: 6px 0 0 12px;
+	margin-bottom: 3px;
+}
+
+#chat-footer-container #sender-icon i{
+	font-size: 23px;
+	cursor: pointer;
 }
 
