@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+#chat-container {
+	width: 650px;
+	position: absolute;
+	border: 1px solid black;
+	margin-right: 40px;
+	right: 0;
+	bottom: 5px;
+}
+
+#chat-box {
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#chat-header {
+	border-bottom: 1px solid black;
+	height: 50px;
+	display: flex;
+	background-color: #DCDCDC;
+}
+
+#chat-header #user-info {
+	display: flex;
+	flex: 2;
+}
+#user-info #profile-image {
+	width: 20%;
+}
+
+#user-info #user-name h4 {
+	margin-top: 14px;
+
+}
+
+#user-info #user-name {
+	padding-left: 5px;
+}
+#profile-image img {
+	height: 50px;
+	width: 50px;
+	margin-left: 10px;
+}
+
+
+#location {
+	flex: 1.2;
+	display: flex;
+	border-left: 1px solid #000000;
+}
+#location #map-marker {
+	flex: 0.08;
+	height: 19px;
+	background-color: #F7F7F7;
+}
+#location #map-marker i{
+	margin-left: 1px;
+}
+
+#location #location-name {
+flex: 1.2;
+margin-top: 12px;
+text-align: center;
+}
+
+#location #close-icon {
+	border: 1px solid black;
+	flex: 0.01;
+	height: 19px;
+	background-color: #32CD32;
+}
+
+#location #close-icon i{
+	float: right;
+	color: white;
+
+}
+
+/*Chat box container*/
+
+#chat-box #inbox-container {
+	border-bottom: : 1px solid black;
+	/*height: 87%;*/
+	overflow-y: auto;
+	flex: 1;
+	padding: 8px 8px 8px 8px;
+	background: url('./whatsapp.jpg');
+	background-attachment: fixed;
+}
+
+/*chat sent styling*/
+#chat-sent {
+	display: flex;
+}
+
+#chat-sent .sp {
+	flex: 1;
+	
+}
+
+#chat-sent .mess{
+	max-width: 300px;
+	/*border: none;*/
+	background-color: #DCF8C6;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 3px 0px;
+	
+}
+
+#chat-sent .mess p {
+	word-break: break-word;
+
+}
+
+#chat-sent .check {
+	float: right;
+}
+
+#chat-sent .check i {
+	font-size: 14px;
+	color: #34B7F1;
+}
+
+#chat-sent .check span{
+	font-size: 12px;
+	color: #888;
+
+}
+
+/*chat-image size*/
+.chat-img {
+	width: 280px;
+}
+
+/*chat received style*/
+#chat-received {
+	display: flex;
+}
+
+#chat-received .sp {
+	flex: 1;
+}
+
+#chat-received .mess{
+	max-width: 300px;
+	/*border: none;*/
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 3px 0px;
+	
+}
+
+#chat-received .mess p {
+	word-break: break-word;
+
+}
+
+#chat-received .check {
+	float: right;
+}
+
+#chat-received .check i {
+	font-size: 14px;
+	color: #34B7F1;
+}
+
+#chat-received .check span{
+	font-size: 12px;
+	color: #888;
+
+}
+/*scroll bar styling*/
+#inbox-container::-webkit-scrollbar {
+	width: 5px;
+	
+}
+
+#inbox-container::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+#inbox-container::-webkit-scrollbar-thumb {
+	background-color: #aaa;
+}
+#inbox-container::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+
+
+/*chat footer styling*/
+#chat-footer {
+	height: 50px;
+	border: 1px solid black;
+}
+
